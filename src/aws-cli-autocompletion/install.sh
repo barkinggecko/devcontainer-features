@@ -23,7 +23,7 @@ cat > /usr/local/bin/aws-cli-autocompletion \
 #!/bin/sh
 RED='\033[0;91m'
 NC='\033[0m' # No Color
-echo "\${RED}On your way to autocompletion, \$(whoami)!\${NC}"
+echo "\${RED}\$(whoami)!\${NC}"
 EOF
 
 chmod +x /usr/local/bin/aws-cli-autocompletion

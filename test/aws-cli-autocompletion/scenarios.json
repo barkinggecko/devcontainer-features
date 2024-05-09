@@ -1,0 +1,9 @@
+{
+    "aws-cli-autocompletion": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "aws-cli-autocompletion": {
+            }
+        }
+    }
+}
