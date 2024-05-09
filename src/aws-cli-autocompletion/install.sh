@@ -18,8 +18,10 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-
-echo "export PATH=/usr/local/bin/:$PATH" >> ~/.profile 
+echo "#" >> ~/.bashrc 
+echo "# Enabling AWS CLI autocompletion ..." >> ~/.bashrc 
+echo "#" >> ~/.bashrc 
+echo "export PATH=/usr/local/bin/:$PATH" >> ~/.bashrc 
 echo "complete -C '/usr/local/bin/aws_completer' aws" >> ~/.bashrc
 echo "Installed AWS CLI autocompletion."
 
