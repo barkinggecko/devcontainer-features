@@ -18,12 +18,17 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-cat > /usr/local/bin/aws-cli-autocompletion \
-<< EOF
-#!/bin/sh
-RED='\033[0;91m'
-NC='\033[0m' # No Color
-echo "\${RED}\$(whoami)!\${NC}"
-EOF
 
-chmod +x /usr/local/bin/aws-cli-autocompletion
+echo "export PATH=/usr/local/bin/:$PATH" >> ~/.profile 
+echo "complete -C '/usr/local/bin/aws_completer' aws" >> ~/.bashrc
+echo "Installed AWS CLI autocompletion."
+
+# cat > /usr/local/bin/aws-cli-autocompletion \
+# << EOF
+# #!/bin/sh
+# RED='\033[0;91m'
+# NC='\033[0m' # No Color
+# echo "\${RED}\$(whoami)!\${NC}"
+# EOF
+
+# chmod +x /usr/local/bin/aws-cli-autocompletion
