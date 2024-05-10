@@ -18,14 +18,14 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-touch ~/tilde-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
-touch /home/$(whoami)/abs-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
+touch $_CONTAINER_USER_HOME/tilde-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
+# touch /home/$(whoami)/abs-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 
-echo "#" >> ~/.bashrc 
-echo "# Enabling AWS CLI autocompletion ..." >> ~/.bashrc 
-echo "#" >> ~/.bashrc 
-echo "export PATH=/usr/local/bin/:$PATH" >> ~/.bashrc 
-echo "complete -C '/usr/local/bin/aws_completer' aws" >> ~/.bashrc
+echo "#" >> $_CONTAINER_USER_HOME/.bashrc 
+echo "# Enabling AWS CLI autocompletion ..." >> $_CONTAINER_USER_HOME/.bashrc 
+echo "#" >> $_CONTAINER_USER_HOME/.bashrc 
+echo "export PATH=/usr/local/bin/:$PATH" >> $_CONTAINER_USER_HOME/.bashrc 
+echo "complete -C '/usr/local/bin/aws_completer' aws" >> $_CONTAINER_USER_HOME/.bashrc
 echo "Installed AWS CLI autocompletion."
 
 # cat > /usr/local/bin/aws-cli-autocompletion \
