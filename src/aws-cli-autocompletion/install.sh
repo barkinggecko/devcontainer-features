@@ -22,11 +22,11 @@ touch $_CONTAINER_USER_HOME/container-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 touch $_REMOTE_USER_HOME/remote-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 # touch /home/$(whoami)/abs-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 
-echo "#" >> $_CONTAINER_USER_HOME/.bashrc 
-echo "# Enabling AWS CLI autocompletion ..." >> $_CONTAINER_USER_HOME/.bashrc 
-echo "#" >> $_CONTAINER_USER_HOME/.bashrc 
-echo "export PATH=/usr/local/bin/:$PATH" >> $_CONTAINER_USER_HOME/.bashrc 
-echo "complete -C '/usr/local/bin/aws_completer' aws" >> $_CONTAINER_USER_HOME/.bashrc
+echo "#" >> $_REMOTE_USER_HOME/.bashrc 
+echo "# Enabling AWS CLI autocompletion ..." >> $_REMOTE_USER_HOME/.bashrc 
+echo "#" >> $_REMOTE_USER_HOME/.bashrc 
+echo "export PATH=/usr/local/bin/:$PATH" >> $_REMOTE_USER_HOME/.bashrc 
+echo "complete -C '/usr/local/bin/aws_completer' aws" >> $_REMOTE_USER_HOME/.bashrc
 echo "Installed AWS CLI autocompletion."
 
 # cat > /usr/local/bin/aws-cli-autocompletion \
