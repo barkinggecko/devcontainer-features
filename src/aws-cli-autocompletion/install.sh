@@ -18,7 +18,8 @@ echo "The effective dev container remoteUser's home directory is '$_REMOTE_USER_
 echo "The effective dev container containerUser is '$_CONTAINER_USER'"
 echo "The effective dev container containerUser's home directory is '$_CONTAINER_USER_HOME'"
 
-touch $_CONTAINER_USER_HOME/tilde-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
+touch $_CONTAINER_USER_HOME/container-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
+touch $_REMOTE_USER_HOME/remote-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 # touch /home/$(whoami)/abs-$(whoami)-$(date '+%Y-%m-%d-%H-%M-%S')
 
 echo "#" >> $_CONTAINER_USER_HOME/.bashrc 
