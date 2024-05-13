@@ -13,8 +13,6 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          # - hello
           - aws-cli-autocompletion
         baseImage:
           - debian:latest
@@ -35,8 +33,6 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          # - hello
           - aws-cli-autocompletion
     steps:
       - uses: actions/checkout@v4
