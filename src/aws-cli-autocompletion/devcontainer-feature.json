@@ -1,7 +1,7 @@
 {
     "name": "AWS CLI Autocompletion",
     "id": "aws-cli-autocompletion",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "description": "A devcontainer feature to added autocompletion support for the AWS CLI.",
     // "options": {
     //     // "greeting": {
