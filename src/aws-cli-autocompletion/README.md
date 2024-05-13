@@ -1,7 +1,7 @@
 
 # AWS CLI Autocompletion (aws-cli-autocompletion)
 
-A devcontainer feature to added autocompletion support for the AWS CLI.
+A devcontainers feature to add autocompletion support for the AWS CLI (see https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html).
 
 ## Example Usage
 
