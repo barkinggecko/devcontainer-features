@@ -1,7 +1,7 @@
 {
     "name": "Git Remote CodeCommit",
     "id": "git-remote-codecommit",
-    "version": "1",
+    "version": "1.0.0",
     "description": "A devcontainer feature to add CodeCommit support to Git.",
     // "options": {
     //     // "greeting": {
