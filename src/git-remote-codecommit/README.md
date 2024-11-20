@@ -1,26 +1,20 @@
 
-# Git Remote Codecommit (git-remote-codecommit)
+# Git Remote CodeCommit (git-remote-codecommit)
 
-A devcontainers feature to add `git-remote-codecommit` support.
+A devcontainer feature to add CodeCommit support to Git.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/barkinggecko/devcontainer-features/git-remote-codecommit:1": {
-        "version": "latest"
-    }
+    "ghcr.io/barkinggecko/devcontainer-features/git-remote-codecommit:1": {}
 }
 ```
 
-## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| n/a | n/a | n/a | n/a |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/barkinggecko/devcontainer-features/blob/main/src/git-remote-codecommit/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
