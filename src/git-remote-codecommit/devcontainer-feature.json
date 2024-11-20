@@ -1,0 +1,23 @@
+{
+    "name": "Git Remote CodeCommit",
+    "id": "git-remote-codecommit",
+    "version": "1",
+    "description": "A devcontainer feature to add CodeCommit support to Git.",
+    // "options": {
+    //     // "greeting": {
+    //     //     "type": "string",
+    //     //     "proposals": [
+    //     //         "hey",
+    //     //         "hello",
+    //     //         "hi",
+    //     //         "howdy"
+    //     //     ],
+    //     //     "default": "hey",
+    //     //     "description": "Select a pre-made greeting, or enter your own"
+    //     // }
+    // },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/aws-cli"
+    ]
+}
